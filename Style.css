@@ -103,6 +103,22 @@
       min-height: 500px; /* Adjust for large screens */
     }
   }
+  @media (max-width: 500px) {
+    .col-3 img{
+        height: 55px !important;
+    }
+    .col-9{
+        padding: 20px !important;
+    }
+    .col-9 p{
+        margin-top: 18px !important;
+    }
+  }
+  @media (max-width: 400px) {
+    .col-3 img{
+        height: 50px !important;
+    }
+  }
   
   
  

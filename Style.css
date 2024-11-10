@@ -1,5 +1,5 @@
 /* Exclusive products & Fashion Section & Featured products */
-.exclusive-section, .fashion-section, .featured-products {
+.exclusive-section, .fashion-section, .featured-products,.exclusive-items {
     padding: 20px;
   }
 /* Fashion Section */
@@ -78,8 +78,7 @@
     justify-content: center;
     position: relative;
     flex-grow: 1;
-    
-  }
+}
 .large-image2 {
     height: 100%;
     min-height: 400px; 
@@ -155,8 +154,57 @@
         padding: 10px;
     }
 }
+/* Exclusive items */
+.fashion-item3,.fashion-item4 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-grow: 1;
+}
+.large-image3 {
+    height: 100%;
+    min-height: 400px; 
+    
+  }
+  .large-image4 {
+    height: 100%;
+    min-height: 200px;
+   
+  }
+  
+  @media (max-width: 576px) {
+    .large-image3, .large-image4 {
+        min-height: 200px; /* Adjust minimum height for very small screens */
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .large-image3, .large-image4 {
+        min-height: 300px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .large-image3 {
+        min-height: 350px;
+    }
+    .large-image4 {
+        min-height: 250px;
+    }
+}
+@media (min-width: 992px) {
+    .large-image3 {
+        min-height: 400px;
+    }
+    
+}
 
-
+ 
+ 
+ 
   /*Footer CSS  */
  .footer {
     background-color: #215f64;

@@ -400,6 +400,14 @@
 .footer a:hover {
   text-decoration: underline;
 }
+.footer-input-text{
+  background-color: #3c6f75;
+  border-radius: 5px 0 0 5px;
+  border: none;  
+}
+.input-group input[type="email"]::placeholder {
+  color: #b8c5c7; /* Placeholder text color */
+}
 
 
 .address-section hr {

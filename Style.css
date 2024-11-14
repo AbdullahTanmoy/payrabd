@@ -129,8 +129,8 @@
 /* Clothing Section CSS */
   .card {
     color: white;
-    border: none;
-    border-radius: 0;
+    /* border: none;
+    border-radius: 0; */
     height: 100%; 
     overflow: hidden; 
 }
@@ -203,39 +203,214 @@
 }
 
  
- 
- 
-  /*Footer CSS  */
- .footer {
-    background-color: #215f64;
-    color: white;
-    padding: 40px 0px 0px 0px;
-  }
-  .footer a  {
-    color: ghostwhite;
-    text-decoration: none;
-  }
-  .footer p {
-   color: ghostwhite;
-  }
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  
-  .address-section hr {
-    flex-grow: 1;
-    border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.8);
-    margin: 0 10px;
-  }
-  .footer-bottom {
-    background-color: #1a4d4f;
-    padding: 10px 0;
-    text-align: center;
-  }
-/* Another footer */
-  .footer2 ul li {
-    line-height: 2.2; /* Adjust the line height as needed for better spacing */
+/* Deal of the day */
+.card-img-top {
+  height: 200px; /* Adjust as needed */
+  object-fit: cover;
 }
-  
+.card-footer{
+  background-color: #40E0D0;
+}
+.card-button{
+  background-color: #0039a6;
+  opacity: 0.8;
+}
+.card-column{
+  background-color: #E0FFFF;
+}
+.card-height{
+  height: 447px;
+}
+.col-height{
+  height: 530px;
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .card-height{
+    height: 544px;
+  }
+  .col-height{
+    height: 620px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .card-height{
+    height: 399px;
+  }
+  .col-height{
+    height: 480px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .card-height{
+    height: 424px;
+  }
+  .col-height{
+    height: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .card-height{
+    height: 424px;
+  }
+  .col-height{
+    height: 500px;
+  }
+}
+@media (max-width: 400px) {
+  .card-height{
+    height: 447px;
+  }
+  .col-height{
+    height: 520px;
+  }
+}
+@media (max-width: 325px) {
+  .card-height{
+    height: 470px;
+  }
+  .col-height{
+    height: 550px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1401px) {
+  .card-height {
+    height: 495px;
+  }
+  .col-height {
+    height: 570px;
+  }
+}
+
+
+/* New arrival */
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.image-info {
+  flex-basis: 40%;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.product-image {
+  width: 100px;
+  height: auto;
+}
+
+.availability {
+  background-color: #00a2ff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+
+.text-info {
+  flex-basis: 60%;
+  text-align: left;
+}
+
+.product-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.rating .fa-star {
+  color: #f9a825;
+  font-size: 12px;
+}
+
+.old-price {
+  color: #888;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.new-price {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 1400px) {
+  .product-card {
+    width: 300px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .product-card {
+    width: 280px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .product-card {
+    width: 260px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .product-card {
+    width: 280px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .product-card {
+    width: 255px;
+  }
+  .product-image {
+    width: 90px;
+  }
+}
+
+@media (max-width: 575px) {
+  .product-card {
+    width: 100%;
+  }
+  .product-image {
+    width: 80px;
+  }
+}
+
+ /*Footer CSS  */
+ .footer {
+  background-color: #215f64;
+  color: white;
+  padding: 40px 0px 0px 0px;
+}
+.footer a  {
+  color: ghostwhite;
+  text-decoration: none;
+}
+.footer p {
+ color: ghostwhite;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+.address-section hr {
+  flex-grow: 1;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 0 10px;
+}
+.footer-bottom {
+  background-color: #1a4d4f;
+  padding: 10px 0;
+  text-align: center;
+}
+

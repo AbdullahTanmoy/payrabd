@@ -340,7 +340,7 @@
   color: #333;
 }
 
-/* Responsive Adjustments */
+
 @media (min-width: 1400px) {
   .product-card {
     width: 300px;
@@ -382,7 +382,21 @@
   .product-image {
     width: 80px;
   }
+}    
+/* New arrival end */
+
+/* Icons Items */
+.icon {
+  width: 50px;
+  height: auto;
 }
+
+@media (min-width: 768px) {
+  .icon {
+    width: 60px;
+  }
+}
+/* Icons Items end */
 
  /*Footer CSS  */
  .footer {

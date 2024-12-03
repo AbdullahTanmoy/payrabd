@@ -1,7 +1,55 @@
 *{
   font-family: "Lato", sans-serif;
-
 }
+/* navbar 1 */
+.navbar-custom {
+  background-color: #f8f9fa !important;
+  padding: 10px 0;
+}
+.navbar-custom .nav-item {
+  margin-right: 15px;
+}
+.navbar-custom .dropdown-menu {
+  border-radius: 0;
+  box-shadow: none;
+}
+.navbar-custom .social-icons a {
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+
+
+/* navbar 2 */
+.navbar {
+  font-size: 14px;
+}
+.nav-link2 i {
+  font-size: 18px;
+  color: #555;
+}
+.navbar-brand img {
+  max-height: 60px;
+}
+.badge {
+  font-size: 10px;
+  padding: 2px 6px;
+}
+
+
+/* Navbar3 */
+.navbar {
+  background-color: #AA0000;
+}
+.navbar-nav .nav-link {
+  color: white;
+}
+.navbar-nav .nav-link:hover {
+  color: #f9f9f9;
+}
+.navbar .special-offer {
+  margin-left: auto;
+}
+
 
 /* Exclusive products & Fashion Section & Featured products */
 .exclusive-section, .fashion-section, .featured-products,.exclusive-items {
@@ -134,7 +182,7 @@
  
 /* Clothing Section CSS */
   .card {
-    color: white;
+    /* color: white; */
     /* border: none;
     border-radius: 0; */
     height: 100%; 
@@ -146,6 +194,7 @@
 
 /* Overlay styling */
 .card-img-overlay {
+  color: white;
     background: rgba(0, 0, 0, 0.4); 
     display: flex;
     flex-direction: column;
@@ -241,9 +290,9 @@
   padding: 2px 8px;
   border-radius: 4px;
 }
-.row > .col {
+/* .row > .col {
   padding: 0.5rem;
-}
+} */
  
 /* Deal of the day */
 .card-img-top {
@@ -428,24 +477,49 @@
 /* New arrival end */
 
 /* Brands */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 16px; 
+}
+
+/* Brand Card Styling */
 .brand-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  width: 100%;
+  aspect-ratio: 1; 
   border: 1px solid #e0e0e0;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin: auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevents overflowing of child elements */
+  margin: auto;
 }
 
+/* Image Styling */
 .brand-card img {
-  width: 60%;
+  width: 80%;
   height: auto;
   object-fit: contain;
-  border-radius: 50%; 
+  border-radius: 50%;
+}
+
+/* Responsive Media Queries for Small Devices */
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 12px; /* Reduced gap for smaller devices */
+  }
+
+  .brand-card {
+    width: 80px;
+    height: 80px; /* Smaller card size for small screens */
+  }
+
+  .brand-card img {
+    width: 70%; /* Slightly smaller images */
+  }
 }
 
 /* Top Seller */
